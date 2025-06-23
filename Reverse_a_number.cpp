@@ -1,3 +1,6 @@
+#include <iostream>
+#include <climits>
+
 class Solution {
 public:
     int reverse(int x) {
@@ -18,3 +21,13 @@ public:
         return reverse;
     }
 };
+
+int main() {
+    Solution sol;
+    int x;
+    std::cin >> x; // You can change this number to test
+    int reversed = sol.reverse(x);
+    std::cout << "Original: " << x << std::endl;
+    std::cout << "Reversed: " << reversed << std::endl;
+    return 0;
+}
