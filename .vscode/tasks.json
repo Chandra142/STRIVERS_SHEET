@@ -1,0 +1,20 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "Build STRIVER_SHEET.cpp",
+			"type": "shell",
+			"command": "g++",
+			"args": [
+				"-g",
+				"STRIVER_SHEET.cpp",
+				"-o",
+				"build/Debug/outDebug.exe"
+			],
+			"group": "build",
+			"problemMatcher": [
+				"$gcc"
+			]
+		}
+	]
+}
