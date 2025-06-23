@@ -1,5 +1,6 @@
-#include <iostream>
+234#include <iostream>
 #include <climits>
+using namespace std;
 
 class Solution {
 public:
@@ -11,10 +12,10 @@ public:
             a = x%10; // last number
             reverse  = (reverse*10+a); // appending the digit by 1 reverse number
             
-            // Checking  for overflow/underflow before updating revers
+            // Checking  for overflow/underflow before updating reverse
             if((reverse  > INT_MAX/10) || (reverse <INT_MIN/ 10)){
                 return 0; 
-                // Returuning 0 if reverse x would cause overflow/underflow; 
+                // Returning 0 if reverse x would cause overflow/underflow; 
             }
             x = x/10; //decreasing number by 1 digit
         }
@@ -25,9 +26,9 @@ public:
 int main() {
     Solution sol;
     int x;
-    std::cin >> x; // You can change this number to test
+    cin >> x; // You can change this number to test
     int reversed = sol.reverse(x);
-    std::cout << "Original: " << x << std::endl;
-    std::cout << "Reversed: " << reversed << std::endl;
+    cout << "Original: " << x << endl;
+    cout << "Reversed: " << reversed << endl;
     return 0;
 }
